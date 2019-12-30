@@ -1,20 +1,25 @@
 ---
 title: Reposts on reddit.com/r/jokes
-excerpt: sdf
 header:
-  overlay_image: /assets/images/snoopng.png
+  overlay_image: assets/images/snoopng.png
+toc: true
 author: Abhilash
+excerpt: 
 ---
 
 # Objective
+
+To quantitatively find out what fraction of jokes submitted on [reddit.com/r/jokes](https://www.reddit.com/r/Jokes/) are reposts.
 
 # Introduction
 
 **Reddit** is an American social news aggregation, web content rating, and discussion website where registered members submit content to the site such as links, text posts, and images, which are then voted up or down by other members. Posts are organized by subject into user-created boards called "subreddits", which cover a variety of topics including news, science, movies, video games, music, books, fitness, food, and image-sharing.
 
-One of the popular subreddit is **[r/jokes](https://www.reddit.com/r/Jokes/)** with 17.6 million "humorists"  subscribed. It is currently 19th largest subreddit with about 1500 jokes submitted per month (greater than 50 upvotes). 
+One of the popular subreddit is [r/jokes](https://www.reddit.com/r/Jokes/) with 17.6 million "humorists"  subscribed. It is currently 19th largest subreddit with about 1500 jokes submitted per month (greater than 50 upvotes). 
 
-figure
+```
+{% include figure image_path="/assets/images/r_jokes/repost.png" alt="this is a placeholder image" caption="This is a figure caption." %}
+```
 
 # Reposting Problem
 
