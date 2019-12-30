@@ -17,9 +17,7 @@ To quantitatively find out what fraction of jokes submitted on [reddit.com/r/jok
 
 One of the popular subreddit is [r/jokes](https://www.reddit.com/r/Jokes/) with 17.6 million "humorists"  subscribed. It is currently 19th largest subreddit with about 1500 jokes submitted per month (greater than 50 upvotes). 
 
-```
 {% include figure image_path="/assets/images/r_jokes/repost.png" alt="this is a placeholder image" caption="This is a figure caption." %}
-```
 
 # Reposting Problem
 
