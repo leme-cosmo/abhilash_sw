@@ -4,7 +4,7 @@ header:
   overlay_image: assets/images/snoopng.png
 toc: true
 author: Abhilash
-excerpt: 
+excerpt: r
 ---
 
 # Objective
