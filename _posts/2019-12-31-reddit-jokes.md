@@ -19,6 +19,8 @@ One of the popular subreddit is [r/jokes](https://www.reddit.com/r/Jokes/) with 
 
 {% include figure image_path="/assets/images/r_jokes/repost.png" alt="this is a placeholder image" caption="This is a figure caption." %}
 
+{% include figure image_path="/assets/images/r_jokes/repost_2.png" alt="this is a placeholder image" caption="This is a figure caption." %}
+
 # Reposting Problem
 
 Though r/jokes is very large subreddit, it lacks the originality in submitted jokes. One of the running gags on the subreddit is that, every joke reaching the front page is a repost. So, as stated in objective, I wanted to quantitatively find out exactly what fraction of submitted jokes are repost.  
