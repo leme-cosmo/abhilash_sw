@@ -1,7 +1,7 @@
 ---
 title: Reposts on reddit.com/r/jokes
 header:
-  overlay_image: assets/images/snoopng_cropped.png
+  overlay_image: assets/images/r_jokes/snoopng_cropped.png
 toc: true
 author: Abhilash
 excerpt: r
