@@ -1,7 +1,7 @@
 ---
 title: Reposts on reddit.com/r/jokes
 header:
-  overlay_image: assets/images/snoopng.png
+  overlay_image: assets/images/snoopng_cropped.png
 toc: true
 author: Abhilash
 excerpt: r
@@ -27,7 +27,7 @@ Though r/jokes is very large subreddit, it lacks the originality in submitted jo
 
 ## Basic Approach
 
-I started with very basic approach to find if the given joke is already submitted. If the given joke matched exactly, character for character, with already submitted joke then it's a repost. So, even if one of the character is here or there, the logic will not find it as duplicate. Even with this flawed logic, I found that there are XX% of the jokes are reposted character for character. That's a staggering number. 
+I started with very basic approach to find if the given joke is already submitted. If the given joke matched exactly, character for character, with already submitted joke then it's a repost. So, even if one of the character is here or there, the logic will not find it as duplicate. Even with this flawed logic, I found that there are 1.93% (1508) of the jokes are reposted character for character at least once. That's a staggering number. 
 
 figure
 
