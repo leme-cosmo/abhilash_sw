@@ -17,7 +17,7 @@ To quantitatively find out what fraction of jokes submitted on [reddit.com/r/jok
 
 One of the popular subreddit is [r/jokes](https://www.reddit.com/r/Jokes/) with 17.6 million "humorists"  subscribed. It is currently 19th largest subreddit with about 1500 jokes submitted per month (greater than 50 upvotes). 
 
-{% include figure image_path="/assets/images/r_jokes/no_jokes_month.png" alt="this is a placeholder image" caption="This is a figure caption." %}
+{% include figure image_path="/assets/images/r_jokes/no_jokes_month.png" alt="n_jokes_month" caption="Activity on r/jokes since the subreddit's birth." %}
 
 # Reposting Problem
 
@@ -28,6 +28,11 @@ Though r/jokes is very large subreddit, it lacks the originality in submitted jo
 ## Basic Approach
 
 I started with very basic approach to find if the given joke is already submitted. If the given joke matched exactly, character for character, with already submitted joke then it's a repost. So, even if one of the character is here or there, the logic will not find it as duplicate. Even with this flawed logic, I found that there are 1.93% (1508) of the jokes are reposted character for character at least once. That's a staggering number. 
+
+<blockquote class="reddit-card" data-card-created="1578140096"><a href="https://www.reddit.com/r/Jokes/comments/cgbhau/wiki_joke/">Wiki joke</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
+
 
 figure
 
