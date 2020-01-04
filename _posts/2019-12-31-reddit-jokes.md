@@ -21,7 +21,7 @@ One of the popular subreddit is [r/jokes](https://www.reddit.com/r/Jokes/) with 
 
 # Reposting Problem
 
-Though r/jokes is very large subreddit, it lacks the originality in submitted jokes. One of the running gags on the subreddit is that, every joke reaching the front page is a repost. So, as stated in objective, I wanted to quantitatively find out exactly what fraction of submitted jokes are repost.  
+Though r/jokes is very large subreddit, it lacks the originality in submitted jokes. One of the running gags on the subreddit is that, every joke reaching the front page is a repost. 
 
 Example:
 
@@ -37,13 +37,19 @@ Example:
 <blockquote class="reddit-card" data-card-created="1578141914"><a href="https://www.reddit.com/r/Jokes/comments/crclls/a_women_called_me_ugly_until_she_found_how_much/">A women called me ugly until she found how much money I make.</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
 
+So, as stated in objective, I wanted to quantitatively find out exactly what fraction of submitted jokes are repost.  
+
 # Finding reposted jokes
 
 ## Basic Approach
 
-I started with very basic approach to find if the given joke is already submitted. If the given joke matched exactly, character for character, with already submitted joke then it's a repost. So, even if one of the character is here or there, the logic will not find it as duplicate. Even with this flawed logic, I found that there are 1.93% (1508) of the jokes are reposted character for character at least once. That's a staggering number. 
+I started with very basic approach to find if the given joke is already submitted. If the given joke matched exactly, character for character, with already submitted joke then it's a repost. So, even if one of the character is here or there, the logic will not find it as duplicate. So according to this basic approach, all the four jokes in the example will be considered as different joke.
 
-figure
+{% include figure image_path="/assets/images/r_jokes/repetition_basic.png" alt="n_jokes_month" caption="Total of 1508 jokes were reposted character for character at least once." %}
+
+ Even then, I found that there are 1.93% (1508) of the jokes are reposted character for character at least once. That's a staggering number. But the approach is definitely flawed as one can see from the example. So, I needed an approach which can take care of small variations.
+
+
 
 ## Advanced Approach
 
