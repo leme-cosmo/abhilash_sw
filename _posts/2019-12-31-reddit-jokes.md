@@ -3,8 +3,8 @@ title: Reposts on reddit.com/r/jokes
 header:
   overlay_image: assets/images/r_jokes/snoopng_cropped.png
 toc: true
-author: Abhilash
-excerpt: r
+author: Abhilash Sarwade
+excerpt: Using TF-IDF 
 ---
 
 # Objective
@@ -23,16 +23,25 @@ One of the popular subreddit is [r/jokes](https://www.reddit.com/r/Jokes/) with 
 
 Though r/jokes is very large subreddit, it lacks the originality in submitted jokes. One of the running gags on the subreddit is that, every joke reaching the front page is a repost. So, as stated in objective, I wanted to quantitatively find out exactly what fraction of submitted jokes are repost.  
 
+Example:
+
+<blockquote class="reddit-card" data-card-created="1578141860"><a href="https://www.reddit.com/r/Jokes/comments/5vt0bn/girls_call_me_ugly_until_they_find_out_how_much/">Girls call me ugly until they find out how much money i make.</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
+<blockquote class="reddit-card" data-card-created="1578141883"><a href="https://www.reddit.com/r/Jokes/comments/aysxx6/girls_used_to_call_me_ugly_until_they_found_out/">Girls used to call me ugly until they found out how much money I make.</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
+<blockquote class="reddit-card" data-card-created="1578141900"><a href="https://www.reddit.com/r/Jokes/comments/bugejh/women_call_me_ugly_until_they_find_out_how_much/">Women call me ugly until they find out how much money I make.</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
+<blockquote class="reddit-card" data-card-created="1578141914"><a href="https://www.reddit.com/r/Jokes/comments/crclls/a_women_called_me_ugly_until_she_found_how_much/">A women called me ugly until she found how much money I make.</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
 # Finding reposted jokes
 
 ## Basic Approach
 
 I started with very basic approach to find if the given joke is already submitted. If the given joke matched exactly, character for character, with already submitted joke then it's a repost. So, even if one of the character is here or there, the logic will not find it as duplicate. Even with this flawed logic, I found that there are 1.93% (1508) of the jokes are reposted character for character at least once. That's a staggering number. 
-
-<blockquote class="reddit-card" data-card-created="1578140096"><a href="https://www.reddit.com/r/Jokes/comments/cgbhau/wiki_joke/">Wiki joke</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
-<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
-
-
 
 figure
 
