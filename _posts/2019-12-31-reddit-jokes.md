@@ -56,6 +56,20 @@ Even then, I found that there are 4.46% (3562) of the jokes are repeated charact
 For more advanced approach, I used [Vector Space Model](https://en.wikipedia.org/wiki/Vector_space_model) which represents any text document as an algebraic vector. So, every joke is now can be represented as an vector. Now, the similarity between two jokes can be computed as one can compute similarity between two vector i.e. by using cosine dot product. 
 I used [scikit-learn's TF-IDF vectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) to vectorize the jokes and [cosine similarity matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html) to find out the similarity. In depth discussion about these functions can be found on [Christian S. Perone's blogpost](http://blog.christianperone.com/2011/09/machine-learning-text-feature-extraction-tf-idf-part-i/). 
 
+To demonstrate this method, take the example above. There are four similar jokes, and let us add one more "control" dissimilar joke to test the method. 
+
+<blockquote class="reddit-card" data-card-created="1578205073"><a href="https://www.reddit.com/r/Jokes/comments/ivui2/woman_looking_in_the_mirror_broke_down_to_tears/">Woman looking in the mirror broke down to tears. Told her husband she looks fat, old, and ugly, said a compliment would make her feel better...</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
+This is a good choice for control joke, as it has some words common with original joke. The similarity matrix between these jokes and one control joke is:
+
+|          | *Joke 1* | *Joke 2* | *Joke 3* | *Joke 4* |
+| :------: | :------: | :------: | :------: | :------: |
+| *Joke 1* |    1     |   0.87   |   0.90   |   0.81   |
+| *Joke 2* |   0.87   |    1     |   0.73   |   0.70   |
+| *Joke 3* |   0.90   |   0.73   |    1     |   0.90   |
+| *Joke 4* |   0.81   |   0.70   |   0.90   |    1     |
+
 # Onto the Results
 
 {% include figure image_path="/assets/images/r_jokes/repetition_advanced.png" alt="advanced" caption="Total of 3562jokes were repeated at least once." %}
