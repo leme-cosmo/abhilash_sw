@@ -63,12 +63,12 @@ To demonstrate this method, take the example above. There are four similar jokes
 
 This is a good choice for control joke, as it has some words common with original joke. The similarity matrix between these jokes and one control joke is:
 
-|          | *Joke 1* | *Joke 2* | *Joke 3* | *Joke 4* |
-| :------: | :------: | :------: | :------: | :------: |
-| *Joke 1* |    1     |   0.87   |   0.90   |   0.81   |
-| *Joke 2* |   0.87   |    1     |   0.73   |   0.70   |
-| *Joke 3* |   0.90   |   0.73   |    1     |   0.90   |
-| *Joke 4* |   0.81   |   0.70   |   0.90   |    1     |
+|        | Joke 1 | Joke 2 | Joke 3 | Joke 4 | Control Joke |
+| :----: | :----: | :----: | :----: | :----: | :----------: |
+| Joke 1 |   1    |  0.87  |  0.90  |  0.81  |     0.24     |
+| Joke 2 |  0.87  |   1    |  0.73  |  0.70  |     0.17     |
+| Joke 3 |  0.90  |  0.73  |   1    |  0.90  |     0.24     |
+| Joke 4 |  0.81  |  0.70  |  0.90  |   1    |     0.22     |
 
 # Onto the Results
 
