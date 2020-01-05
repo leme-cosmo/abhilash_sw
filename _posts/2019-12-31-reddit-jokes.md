@@ -1,10 +1,10 @@
 ---
-title: Reposts on reddit.com/r/jokes
+title: Reposts of jokes on reddit.com/r/jokes
 header:
   overlay_image: assets/images/r_jokes/snoopng_cropped.png
 toc: true
 author: Abhilash Sarwade
-excerpt: Using TF-IDF 
+excerpt: Evaluation of number of reposts using TF-IDF 
 ---
 
 # Objective
@@ -45,9 +45,9 @@ So, as stated in objective, I wanted to quantitatively find out exactly what fra
 
 I started with very basic approach to find if the given joke is already submitted. If the given joke matched exactly, character for character, with already submitted joke then it's a repost. So, even if one of the character is here or there, the logic will not find it as duplicate. So according to this basic approach, all the four jokes in the example will be considered as different joke.
 
-{% include figure image_path="/assets/images/r_jokes/repetition_basic.png" alt="n_jokes_month" caption="Total of 1508 jokes were reposted character for character at least once." %}
+{% include figure image_path="/assets/images/r_jokes/repetition_basic.png" alt="basic" caption="Total of 3562 jokes were repeated, character for character, at least once." %}
 
- Even then, I found that there are 1.93% (1508) of the jokes are reposted character for character at least once. That's a staggering number. But the approach is definitely flawed as one can see from the example. So, I needed an approach which can take care of small variations.
+Even then, I found that there are 4.46% (3562) of the jokes are repeated character for character at least once. That's a staggering number. But the approach is definitely flawed as one can see from the example. So, I needed an approach which can take care of small variations.
 
 
 
@@ -58,7 +58,7 @@ I used [scikit-learn's TF-IDF vectorizer](https://scikit-learn.org/stable/module
 
 # Onto the Results
 
-figure
+{% include figure image_path="/assets/images/r_jokes/repetition_advanced.png" alt="advanced" caption="Total of 3562jokes were repeated at least once." %}
 
 As you can see from the above graph, only YY% of total jokes are original. ZZ% of the jokes were posted more than once. These are very large numbers. 
 
