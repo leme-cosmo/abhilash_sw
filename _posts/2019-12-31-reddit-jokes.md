@@ -27,16 +27,12 @@ Example:
 
 <blockquote class="reddit-card" data-card-created="1578141860"><a href="https://www.reddit.com/r/Jokes/comments/5vt0bn/girls_call_me_ugly_until_they_find_out_how_much/">Girls call me ugly until they find out how much money i make.</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
-
 <blockquote class="reddit-card" data-card-created="1578141883"><a href="https://www.reddit.com/r/Jokes/comments/aysxx6/girls_used_to_call_me_ugly_until_they_found_out/">Girls used to call me ugly until they found out how much money I make.</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
-
 <blockquote class="reddit-card" data-card-created="1578141900"><a href="https://www.reddit.com/r/Jokes/comments/bugejh/women_call_me_ugly_until_they_find_out_how_much/">Women call me ugly until they find out how much money I make.</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
-
 <blockquote class="reddit-card" data-card-created="1578141914"><a href="https://www.reddit.com/r/Jokes/comments/crclls/a_women_called_me_ugly_until_she_found_how_much/">A women called me ugly until she found how much money I make.</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
-
 So, as stated in objective, I wanted to quantitatively find out exactly what fraction of submitted jokes are repost.  
 
 # Finding reposted jokes
@@ -60,7 +56,6 @@ To demonstrate this method, take the example above. There are four similar jokes
 
 <blockquote class="reddit-card" data-card-created="1578205073"><a href="https://www.reddit.com/r/Jokes/comments/ivui2/woman_looking_in_the_mirror_broke_down_to_tears/">Woman looking in the mirror broke down to tears. Told her husband she looks fat, old, and ugly, said a compliment would make her feel better...</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
-
 This is a good choice for control joke, as it has some words common with original joke. The similarity matrix between these jokes and one control joke is:
 
 |        | Joke 1 | Joke 2 | Joke 3 | Joke 4 | Control Joke |
@@ -70,15 +65,35 @@ This is a good choice for control joke, as it has some words common with origina
 | Joke 3 |  0.90  |  0.73  |   1    |  0.90  |     0.24     |
 | Joke 4 |  0.81  |  0.70  |  0.90  |   1    |     0.22     |
 
-# Onto the Results
+As one can see from the table, the similarity score between first four jokes is at least 0.7. Whereas, the dissimilar control joke has similarity score of around 0.2. So, this approach seems to be able to handle slight variations within similar jokes.
 
-{% include figure image_path="/assets/images/r_jokes/repetition_advanced.png" alt="advanced" caption="Total of 3562jokes were repeated at least once." %}
+# On to the Results
 
-As you can see from the above graph, only YY% of total jokes are original. ZZ% of the jokes were posted more than once. These are very large numbers. 
+## Repetition of Jokes
+
+{% include figure image_path="/assets/images/r_jokes/repetition_advanced.png" alt="advanced" caption="70.61% of the jokes were repeated at least once." %}
+
+As you can see from the above graph, 70.61% of the jokes were posted more than once. There are only ~38k unique jokes out of analyzed ~79k jokes.
+
+## Extended Graph
+
+{% include figure image_path="/assets/images/r_jokes/repetition_advanced_ext.png" alt="advanced_ext" caption="Around 200 jokes have been posted 50 times." %} 
 
 ## Most submitted joke
 
-## Median upvotes as a function of number of times the joke was submitted
+The following joke was submitted 54 times!
+
+<blockquote class="reddit-card" data-card-created="1578233219"><a href="https://www.reddit.com/r/Jokes/comments/4maoti/a_father_buys_a_lie_detector_robot_that_slaps/">A father buys a lie detector robot that slaps people when they lie.</a> from <a href="http://www.reddit.com/r/Jokes">r/Jokes</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
+
 
 ## Temporal Distribution of reposting
 
+# Limitations 
+
+Short and template jokes are very difficult to differentiate. Knock knock jokes, how many X does it take to change a lightbulb, are typical examples. Although, these jokes are different essentially, the logic I used clubbed them together.
+
+# Conclusion
+
+Around 70% of the jokes submitted on reddit.com/r/jokes are posted more than once. There are some jokes which have been posted 50 times. Only ~38k out of  ~79k jokes are unique.
